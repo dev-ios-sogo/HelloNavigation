@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 
 class MainFragment : Fragment() {
 
@@ -21,5 +23,13 @@ class MainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        view.findViewById<Button>(R.id.navigate_action_bt)?.setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.next_action, null)
+        )
+
+    }
 
 }

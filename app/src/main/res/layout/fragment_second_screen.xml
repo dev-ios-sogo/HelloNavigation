@@ -8,8 +8,9 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20dp"
-        android:text="YOOOOO!!!!!" />
+        android:layout_height="50dp"
+        android:text="SCREEN 2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
 </FrameLayout>

@@ -6,10 +6,24 @@
     android:id="@+id/nav_host_fragment"
     tools:context=".MainFragment">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="@string/hello_blank_fragment" />
+
+        <Button
+            android:id="@+id/navigate_action_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50pt"
+            android:text="Navigate next screen" />
+
+
+    </LinearLayout>
 
 </FrameLayout>
